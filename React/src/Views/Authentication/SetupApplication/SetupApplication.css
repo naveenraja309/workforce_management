@@ -1,0 +1,267 @@
+#header {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 5px 4px rgba(229, 229, 229, 0.5);
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#header .row:first-child {
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+}
+
+#header .company {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #3bc163;
+}
+
+#header .login-box {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 50px;
+}
+
+#header .login-box .login {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #3bc163;
+}
+
+#header .login-box .contact {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.361111px;
+  color: #a1a6a9;
+}
+
+#header .login-box .contact img {
+  margin-right: 5px;
+}
+
+@media (min-width: 1200px) {
+  #header .login-box {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #header .login-box {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  #header {
+    height: 100px;
+  }
+  #header .company {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #header .login-box {
+    width: 100%;
+    text-align: center;
+    justify-content: center !important;
+    padding-left: 0px !important;
+  }
+}
+
+#sa-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#sa-content img {
+  width: 100%;
+}
+
+#sa-content .content-box {
+  display: flex;
+  align-items: center;
+}
+
+#sa-content .content-box .content {
+  width: 80%;
+}
+
+#sa-content .content-box .title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 40px;
+  color: #183247;
+}
+
+#sa-content .content-box .promo-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  color: rgba(24, 50, 71, 0.7);
+}
+
+#sa-content .content-box .form {
+  margin-top: 15px;
+}
+
+#sa-content .content-box .form label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a1a6a9;
+}
+
+#sa-content .content-box .form input {
+  border: 0.5px solid #a1a6a9 !important;
+  border-radius: 2px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(161, 166, 169, 0.62115);
+}
+
+#sa-content .content-box .form .fullDomain .email {
+  padding: 0 !important;
+}
+
+#sa-content .content-box .form .fullDomain .email input {
+  border-right: none !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+#sa-content .content-box .form .fullDomain .domain {
+  padding: 0 !important;
+}
+
+#sa-content .content-box .form .domain-end {
+  background: linear-gradient(
+    180deg,
+    rgba(235, 238, 240, 0.4) 0%,
+    rgba(207, 207, 212, 0.4) 100%
+  );
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  color: rgba(24, 50, 71, 0.540563);
+  border: 0.5px solid #a1a6a9 !important;
+  border-left: none !important;
+  border-radius: 2px;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  padding: 8px;
+}
+
+#sa-content .content-box .form button {
+  background: #3bc163;
+  border-radius: 2px;
+  border: none;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  padding: 5px 40px;
+}
+
+@media (max-width: 767px) {
+  #sa-content .content-box .content {
+    width: 100% !important;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #header {
+    height: 70px;
+  }
+  #header .company {
+    font-weight: 600;
+    font-size: 30px;
+    color: #3bc163;
+  }
+  #header .login-box .login {
+    font-weight: 600;
+    font-size: 18px;
+    color: #3bc163;
+  }
+  
+  #header .login-box .contact {
+    font-size: 18px;
+    letter-spacing: 0.361111px;
+    color: #a1a6a9;
+  }
+  #sa-content .content-box .title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  #sa-content .content-box .promo-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(24, 50, 71, 0.7);
+  }
+  #sa-content .content-box .form {
+    margin-top: 30px;
+  }
+  #sa-content .content-box .form label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #a1a6a9;
+  }
+  #sa-content .content-box .form input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  #sa-content .content-box .form button {
+    margin-top: 45px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  #sa-content .content-box .form .domain-end {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 8px;
+  }
+}
+
+#sa-content .form-spinner{
+  display: block;
+  width: 40px;
+  margin: 15px auto 0 auto;
+}

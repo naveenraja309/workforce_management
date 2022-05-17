@@ -1,0 +1,222 @@
+#header {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 5px 4px rgba(229, 229, 229, 0.5);
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#header .row:first-child {
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+}
+
+#header .company {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #3bc163;
+}
+
+#header .home-login-box {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+#header .home-login-box .login {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #3bc163;
+}
+
+#header .home-login-box .contact {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.361111px;
+  color: #a1a6a9;
+}
+
+#header .home-login-box .contact img {
+  margin-right: 5px;
+}
+
+@media (min-width: 1200px) {
+  #header .home-login-box {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #header .home-login-box {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  #header {
+    height: 100px;
+  }
+  #header .company {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #header .home-login-box {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#ee-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#ee-content img {
+  width: 100%;
+}
+
+#ee-content .content-box {
+  display: flex;
+  align-items: center;
+}
+
+#ee-content .content-box .content {
+  width: 80%;
+}
+
+#ee-content .content-box .title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 40px;
+  color: #183247;
+}
+
+#ee-content .content-box .promo-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  color: rgba(24, 50, 71, 0.7);
+}
+
+#ee-content .content-box .email-form {
+  margin-top: 15px;
+}
+
+#ee-content .content-box .email-form label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a1a6a9;
+}
+
+#ee-content .content-box .email-form input {
+  border: 0.5px solid #a1a6a9;
+  border-radius: 2px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(161, 166, 169, 0.62115);
+}
+
+#ee-content .content-box .email-form button {
+  background: #3bc163;
+  border-radius: 2px;
+  border: none;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  padding: 5px 20px;
+}
+
+@media (max-width: 767px) {
+  #ee-content .content-box .content {
+    width: 100% !important;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #header {
+    height: 70px;
+  }
+  #header .company {
+    font-weight: 600;
+    font-size: 30px;
+    color: #3bc163;
+  }
+  #header .home-login-box .login {
+    font-size: 18px;
+  }
+  
+  #header .home-login-box .contact {
+    font-size: 18px;
+    letter-spacing: 0.361111px;
+  }
+  #ee-content .content-box .title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  #ee-content .content-box .promo-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(24, 50, 71, 0.7);
+  }
+  #ee-content .content-box .email-form {
+    margin-top: 30px;
+  }
+  #ee-content .content-box .email-form label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #a1a6a9;
+  }
+  #ee-content .content-box .email-form input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  #ee-content .content-box .email-form button {
+    margin-top: 45px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+#ee-content .form-spinner{
+  display: block;
+  width: 40px;
+  margin: 15px auto 0 auto;
+}

@@ -1,0 +1,102 @@
+#workforce-panel .left-box {
+  position: relative;
+  width: 250px;
+  border-radius: 0;
+  background: #284255;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 15%);
+  min-height: 100vh;
+}
+
+#workforce-panel .left-box .company {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #183247;
+  mix-blend-mode: normal;
+}
+
+#workforce-panel .left-box .company .name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #3bc163;
+}
+
+#workforce-panel .left-box .company .icon {
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.22;
+}
+
+#workforce-panel .left-box .menus {
+  width: 100%;
+  padding: 20px;
+}
+
+#workforce-panel .left-box .menus ul {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+#workforce-panel .left-box .menus li:not(:first-child) {
+  padding: 15px 0;
+}
+
+#workforce-panel .left-box .menus a {
+  text-decoration: none;
+}
+
+#workforce-panel .left-box .menus a:hover .menu-box,
+#workforce-panel .left-box .menus a.active .menu-box{
+  background: #3bc163 !important;
+  border-color: none !important;
+}
+
+#workforce-panel .left-box .menus .menu-box {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#workforce-panel .left-box .menus .menu-box .icon {
+  align-self: center;
+  margin-right: 10px;
+}
+
+#workforce-panel .left-box .menus .menu-box .name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+@media(min-width:1600px) {
+  #workforce-panel .left-box .company .name {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #workforce-panel .left-box {
+    position: relative;
+    width: 350px;
+    min-height: 100vh;
+  }
+  #workforce-panel .left-box .menus .menu-box .icon {
+    align-self: center;
+    margin-right: 10px;
+  }
+  
+  #workforce-panel .left-box .menus .menu-box .name {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  #workforce-panel .left-box .company .icon {
+    margin-top: 5px;
+  }
+}
