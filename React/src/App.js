@@ -6,6 +6,7 @@ import {
   Switch
 } from "react-router-dom"
 
+import GuardedRoute from "./shared/Guardedroute"
 import { useSelector } from "react-redux"
 
 import Login from "./Views/Authentication/Login/Login"
@@ -19,20 +20,9 @@ import "./App.css"
 
 function App() {
   let routes
-
   const userData = useSelector((state) => state.auth)
   const token = userData?.userData.token
 
- if (token) {
-  routes = (
-    <Switch>
-      <Route path="/WorkforceManagement">
-        <WorkforceManagement />
-      </Route>
-      <Redirect to="/WorkforceManagement" />
-    </Switch>
-  )
- } else {
   routes = (
     <Switch>
       <Route path="/" exact>
@@ -50,10 +40,15 @@ function App() {
       <Route path="/personalPassword/:id">
         <PersonalPassword />
       </Route>
+      <GuardedRoute
+        path="/WorkforceManagement"
+        component={WorkforceManagement}
+        token={token}
+      />
+
       <Redirect to="/" />
     </Switch>
   )
- }
 
   return (
     <Router>
